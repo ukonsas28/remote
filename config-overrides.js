@@ -8,7 +8,7 @@ module.exports = function override(config, env) {
 
   config.output = {
     ...config.output,
-    publicPath: "http://localhost:3001/",
+    publicPath: "auto",
     clean: true,
     crossOriginLoading: "anonymous",
   };
