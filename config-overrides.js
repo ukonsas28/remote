@@ -6,12 +6,12 @@ module.exports = function override(config, env) {
   // проверка работоспособности на локальной машине
   // npx serve -p 3001 -C -s ./build
 
-  // config.output = {
-  //   ...config.output,
-  //   publicPath: "auto",
-  //   clean: true,
-  //   crossOriginLoading: "anonymous",
-  // };
+  config.output = {
+    ...config.output,
+    publicPath: "auto",
+    clean: true,
+    crossOriginLoading: "anonymous",
+  };
 
   const moduleFederation = new ModuleFederationPlugin({
     name: "remote",
